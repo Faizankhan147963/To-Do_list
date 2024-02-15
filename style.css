@@ -1,0 +1,113 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: lightgray;
+}
+
+body {
+          height: 100vh;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+}
+
+.container {
+          margin-top: 5%;
+}
+
+.container h1 {
+          margin-bottom: 10px;
+}
+
+.div_form {
+          width: 100%;
+          max-width: 700px;
+}
+
+.div_form input {
+          width: 500px;
+          padding: 5px;
+          font-size: 22px;
+          font-weight: bold;
+          background-color: white;
+          border: none;
+          outline: none;
+          padding: 10px;
+          border-bottom-left-radius: 10px;
+          border-top-left-radius: 10px;
+}
+.div_form button{
+          background-color: green;
+          color: white;
+          border: none;
+          outline: none;
+          padding: 10px;
+          font-size: 22px;
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px;
+}
+::placeholder{
+          color: darkgray;
+}
+
+.todolist {
+          list-style: none;
+          margin-top: 30px;
+}
+
+.todolist li {
+          margin-top: 15px;
+          font-weight: bold;
+          font-size: 22px;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          overflow-x: hidden;
+          width: 600px;
+          max-width: 600px;
+          background-color: white;
+          color: black;
+          padding: 10px;
+          border-radius: 10px;
+}
+.todolist li p{
+          background-color: white;
+}
+.todolist li button {
+          background-color: white;
+          border: none;
+          outline: none;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+}
+
+.todolist li .update {
+          /* margin-left: 60%; */
+          color: green;
+          position: absolute;
+          left: 60%;
+}
+
+.todolist li .remove {
+          color: red;
+          position: absolute;
+          left: 66%;
+}
+
+@media screen and (max-width:700px) {
+          .div_form input{
+                    width: 300px;
+          }
+          .todolist li{
+                    width: 400px;
+          }
+          .remove{
+                  margin-left: 7%;
+          }
+}
